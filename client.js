@@ -1,32 +1,3 @@
-// êîíñòàíòû
-var WaitingPlayersTime = 1;
-var BuildBaseTime = 3;
-var GameModeTime = false;
-var EndOfMatchTime = 1;
-
-// êîíñòàíòû èìåí
-var WaitingStateValue = "Waiting";
-var BuildModeStateValue = "BuildMode";
-var GameStateValue = "Game";
-var EndOfMatchStateValue = "EndOfMatch";
-
-// ïîñòîÿííûå ïåðåìåííûå
-var mainTimer = Timers.GetContext().Get("Main");
-var stateProp = Properties.GetContext().Get("State");
-
-// ïðèìåíÿåì ïàðàìåòðû ñîçäàíèÿ êîìíàòû
-Damage.FriendlyFire = GameMode.Parameters.GetBool("FriendlyFire");
-Map.Rotation = GameMode.Parameters.GetBool("MapRotation");
-BreackGraph.OnlyPlayerBlocksDmg = GameMode.Parameters.GetBool("PartialDesruction");
-BreackGraph.WeakBlocks = GameMode.Parameters.GetBool("LoosenBlocks");
-
-// áëîê èãðîêà âñåãäà óñèëåí
-BreackGraph.PlayerBlockBoost = true;
-
-// ïàðàìåòðû èãðû
-Properties.GetContext().GameModeName.Value = "GameModes/Team Dead Match";
-TeamsBalancer.IsAutoBalance = true;
-Ui.GetContext().MainTimerId.Value = mainTimer.Id;
 // ñîçäàåì êîìàíäû
 Teams.Add("Blue", "Teams/Blue", { b: 1 });
 Teams.Add("Red", "Teams/Red", { r: 1 });
