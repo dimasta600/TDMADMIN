@@ -226,3 +226,6 @@ function SpawnTeams() {
 		Spawns.GetContext(e.Current).Spawn();
 	}
 }
+
+//
+contextedProperties.GetContext().SkinGirl.Value 1;
