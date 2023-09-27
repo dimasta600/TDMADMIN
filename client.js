@@ -1,3 +1,6 @@
+//var Color = importNamespace('PixelCombats.ScriptingApi.Structures');
+//var System = importNamespace('System');
+
 // êîíñòàíòû
 var WaitingPlayersTime = 1;
 var BuildBaseTime = 3;
