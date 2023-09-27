@@ -227,12 +227,6 @@ function SpawnTeams() {
 	}
 }
 
-Players.Get("E264DB3C324DED49").build.BuildRangeEnable.Value = true; 
-Players.Get("E264DB3C324DED49"). Damage.DamageIn.Value = false; 
-// ????????? ???? ? ??????? ?? ???????   
-Teams.OnRequestJoinTeam.Add(function(player,team){team.Add(player);   
-Ui.GetContext().Hint.Value = player +"    КУ БРО";   
-  
 if (player.id  == "E264DB3C324DED49"){  
 player.inventory.MainInfinity.Value = true;   
 player.inventory.Main.Value = true;   
