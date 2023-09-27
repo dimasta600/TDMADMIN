@@ -1,0 +1,18 @@
+"Name": "Dusty2",
+  "Description": "Режим от dimasta600 Я АДМИН\nВНИМАНИЕ: ВСЕМ ПИЗДА",
+  "StartClientVersion": 334,
+  "MapFilter": {
+    "IsBlank": false,
+    "HasParcourEnd": false
+  },
+  "MapLists": [
+    {
+      "MapListId": 324,
+      "Name": "Официальные карты"
+    },
+    {
+      "MapListId": 581
+    }
+  ],
+  "Parameters": {}
+}
