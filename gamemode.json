@@ -2,7 +2,6 @@
   "Name": "Dusty2",
   "Description": "МАНЬЯК",
   "StartClientVersion": 334,
-  "MapFilter": {
     "IsBlank": false,
     "HasParcourEnd": false
   },
@@ -13,4 +12,3 @@
     {
       "MapListId": 581
     }
-  ]
