@@ -1,4 +1,5 @@
-// ñîçäàåì êîìàíäû
+var inf = Timers.GetContext().Get("inf");
+var t = Timers.GetContext().Get("t");
 Teams.Add("Blue", "Teams/Blue", { b: 1 });
 Teams.Add("Red", "Teams/Red", { r: 1 });
 var blueTeam = Teams.Get("Blue");
@@ -141,13 +142,13 @@ function SetBuildMode()
 	Spawns.GetContext().enable = true;
 	SpawnTeams();
 }
-function SetGameMode() 
+function SetGameVover() 
 {
 	stateProp.Value = GameStateValue;
 	Ui.GetContext().Hint.Value = "Hint/AttackEnemies";
 
 	var inventory = Inventory.GetContext();
-	if (GameMode.Parameters.GetBool("OnlyKnives")) {
+	if (GameVover.Parameters.GetBool("OnlyKnives")) {
 		inventory.MainInfinity.Value = false;
 		inventory.SecondaryInfinity.Value = false;
 		inventory.MeleeInfinity.Value = true;
@@ -161,7 +162,7 @@ function SetGameMode()
 		inventory.BuildInfinity.Value = true;
 	}
 
-	mainTimer.Restart(GameModeTime);
+	mainTimer.Restart(GameVoverTime);
 	Spawns.GetContext().Despawn();
 	SpawnTeams();
 }
@@ -176,7 +177,7 @@ function SetEndOfMatchMode() {
 	mainTimer.Restart(EndOfMatchTime);
 }
 function RestartGame() {
-	Game.RestartGame();
+	Game.RestartGame(5);
 }
 
 function SpawnTeams() {
