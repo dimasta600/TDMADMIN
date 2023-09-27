@@ -1,3 +1,18 @@
-{
-  "Name": "Dusty2",
-  "Description": "МАНЬЯК",
+"Name": "Dusty2",
+  "Description": "Режим от dimasta600",
+  "StartClientVersion": 334,
+  "MapFilter": {
+    "IsBlank": false,
+    "HasParcourEnd": false
+  },
+  "MapLists": [
+    {
+      "MapListId": 324,
+      "Name": "Официальные карты"
+    },
+    {
+      "MapListId": 581
+    }
+  ],
+  "Parameters": {}
+}
