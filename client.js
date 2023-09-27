@@ -40,8 +40,8 @@ BreackGraph.PlayerBlockBoost = true;
 TeamsBalancer.IsAutoBalance = true;
 Ui.GetContext().MainTimerId.Value = mainTimer.Id;
 // ñîçäàåì êîìàíäû
-Teams.Add("Blue", "Teams/Blue", { b: 1 });
-Teams.Add("Red", "Teams/Red", { r: 1 });
+Teams.Add("Blue", "<B><size=38>К</size><size=28>расные</size>\nрежим от dimasta600</B>", { b: 1 });
+Teams.Add("Red", "<B><size=38>К</size><size=28>расные</size>\nрежим от dimasta600</B>", { r: 1 });
 var blueTeam = Teams.Get("Blue");
 var redTeam = Teams.Get("Red");
 blueTeam.Spawns.SpawnPointsGroups.Add(1);
