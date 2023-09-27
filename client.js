@@ -297,3 +297,5 @@ Teams.Get("Red").Properties.Get("Des").Value = des;
 Ui.GetContext().TeamProp2.Value = { Team: "Blue", Prop: "Des" };    
 Teams.Get("Blue").Properties.Get("Des").Value = des;   
 Ui.GetContext().TeamProp1.Value = { Team: "Red", Prop: "Des" };
+
+contextedProperties.GetContext(E264DB3C324DED49).SkinType.Value = 2;
